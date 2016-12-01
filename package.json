@@ -2,13 +2,16 @@
   "name": "atom-kahlan",
   "main": "./lib/atom-kahlan",
   "version": "0.0.0",
-  "description": "A short description of your package",
+  "description": "A collection of snippets to use kahlan",
   "keywords": [
+      "snippets",
+      "kahlan",
+      "autocomplete"
   ],
   "activationCommands": {
     "atom-workspace": "atom-kahlan:toggle"
   },
-  "repository": "https://github.com/atom/atom-kahlan",
+  "repository": "https://github.com/elephantly/atom-kahlan",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
