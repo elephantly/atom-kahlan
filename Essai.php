@@ -1,0 +1,4 @@
+<?php
+beforeEach(function() {
+    ;
+});

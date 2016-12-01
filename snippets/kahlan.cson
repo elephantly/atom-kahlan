@@ -1,0 +1,86 @@
+'.source.php':
+    # describe
+    'Describe':
+        'prefix': 'kdescribe'
+        'description': 'Generally contains all specs for a method. Using the class method\'s name is probably the best option for a clean description.'
+        'body': """
+describe("${1:ClassMethodName}", function() {
+    $2
+});
+"""
+    # it
+    'It':
+        'prefix': 'kit'
+        'description': 'Contains the code to test. Keep its description short and clear.'
+        'body': """
+it("${1: I expect this}", function() {
+    $2
+});
+"""
+    # before all
+    'Before All':
+        'prefix': 'kbeforeAll'
+        'description': 'Run once inside a describe or context before all contained specs.'
+        'body': """
+beforeAll(function() {
+    $1
+});
+"""
+    # before each
+    'Before Each':
+        'prefix': 'kbeforeEach'
+        'description': 'Run before each spec of the same level.'
+        'body': """
+beforeEach(function() {
+    $1
+});
+"""
+    # After All
+    'After All':
+        'prefix': 'kafterAll'
+        'description': 'Run once inside a describe or context after all contained specs.'
+        'body': """
+afterAll(function() {
+    $1
+});
+"""
+    # After Each
+    'After Each':
+        'prefix': 'kafterEach'
+        'description': 'Run after each spec of the same level.'
+        'body': """
+afterEach(function() {
+    $1
+});
+"""
+    # Given
+    'Given':
+        'prefix': 'kgiven'
+        'description': 'Define a var in a context'
+        'body': """
+given('${1:varName}', function() {
+    return true;
+});
+"""
+    # expect
+    'Expect':
+        'prefix': 'kexpect'
+        'description': 'Expect'
+        'body': """
+expect($1)$2
+"""
+    # waits for
+    'Waits For':
+        'prefix': 'kwaits'
+        'description': 'Asynchronous Expectation'
+        'body': """
+waitsFor(function() {
+   $1
+});"""
+    # allow
+    'Allow':
+        'prefix': 'kallow'
+        'description': 'Allow'
+        'body': """
+allow($1)$2
+"""
